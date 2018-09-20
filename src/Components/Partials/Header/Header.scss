@@ -1,0 +1,13 @@
+@import "../../../Assets/scss/components/_variables.scss";
+
+header {
+  background: $black-bg;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  img {
+    height: 27px;
+    width: auto;
+  }
+}

@@ -1,0 +1,85 @@
+@import "../../../../Assets/scss/components/_variables.scss";
+
+
+.card.card-pricing {
+  box-shadow: none;
+  transition: transform .4s,box-shadow .4s;
+  .card-head {
+    background: $light-black;
+    // border-bottom: 5px solid $orange-bg;
+    color: $white-color;
+    .category {
+      color: $white-color;
+      font-weight: $font-weight-bold;
+      font-size: $font-size-h5;
+      font-family: $sans-serif-family;
+      border-bottom: 1px solid $smoke-bg;
+      padding: $padding-large-vertical 0;
+      margin-bottom: $margin-base-vertical;
+    }
+    .price {
+      font-weight: $font-weight-bold;
+      font-family: $releway-serif-family;
+      font-size: 6.5em;
+      line-height: .7em;
+      margin: 0;
+      small {
+        font-weight: $font-weight-bold;
+        font-size: .4em;
+      }
+    }
+    .description {
+      color: rgba($white-color, .5);
+      font-weight: $font-weight-semi;
+      font-size: $font-size-large;
+      border-top: 1px solid $smoke-bg;
+      padding: $padding-simple-vertical 0;
+      margin: 0;
+    }
+    .tag {
+      background: $orange-bg;
+      color: $white-color;
+      font-size: $font-size-large;
+      display: block;
+      font-weight: $font-weight-bold;
+      padding: 0.2em 0 0.15em;
+      line-height: 2.5em;
+    }
+  }
+  .card-body {
+    border-top: 1px solid $smoke-bg;
+    padding: 0;
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      li {
+        border-top: 1px solid $smoke-bg;
+        color: $medium-gray;
+        display: block;
+        padding: $padding-simple-vertical 0;
+        text-transform: uppercase;
+      }
+    }
+  }
+  &:hover {
+    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+    transform: translate3d(0, -0.5rem, 0);
+  }
+}
+@media (min-width: 768px) {
+  .Pricing .col-md-4{
+    &:first-child,
+    &:last-child {
+      .card.card-pricing{
+        margin-top: 2.19rem;
+      }
+    }
+  }
+}
+
+
+
+.section.bg-gray {
+  background: $smoke-bg;
+}

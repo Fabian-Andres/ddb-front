@@ -1,0 +1,50 @@
+@import "../../../../Assets/scss/components/_variables.scss";
+
+.Banner {
+  margin-top: 59px;
+}
+.page-header{
+  .title {
+    &::after {
+      border-color: $white-bg;
+      margin: initial;
+      right: initial;
+    }
+  }
+  &.page-header-medium{
+    min-height: 77vh;
+    max-height: 540px;
+  }
+
+  .page-header-image {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  @media screen and (min-width: 1367px){
+    &.page-header-medium{
+      min-height: 60vh;
+      max-height: 430px;
+    }
+
+  }
+  @media screen and (max-width: 991px) {
+    &.page-header-medium {
+      min-height: 40vh;
+      max-height: 540px;
+    }
+    .page-header > .container {
+      padding-top: 8vh;
+    }
+    img {
+      display: none;
+    }
+    .title {
+      font-size: $font-size-h4;
+    }
+    .description {
+      font-size: $font-size-large;
+      margin-bottom: 0;
+    }
+  }
+}

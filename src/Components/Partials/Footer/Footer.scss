@@ -1,0 +1,57 @@
+@import "../../../Assets/scss/components/_variables.scss";
+
+footer{
+    padding: 15px 0 12px;
+    background: $black-bg;
+    &.footer-default{
+        background-color: #f2f2f2;
+    }
+    span {
+      font-size: $font-size-small;
+    }
+
+    nav{
+        display: block;
+        text-align: center;
+    }
+
+    ul{
+        margin-bottom: 10px;
+        padding: 0;
+        list-style: none;
+
+        li{
+            display: inline-block;
+
+            a{
+                color: inherit;
+                padding: $padding-base-vertical $padding-small-horizontal;
+                font-size: $btn-icon-font-size-lg;
+                text-transform: uppercase;
+                text-decoration: none;
+                transition: ease-in-out 0.3s;
+                &:hover{
+                    text-decoration: none;
+                    opacity: 0.7
+                }
+                @media screen and (max-width: 991px) {
+                  padding: $padding-base-vertical;
+                }
+            }
+        }
+    }
+
+    .copyright{
+        font-size: $font-size-small;
+    }
+
+    &:after{
+        display: table;
+        clear: both;
+        content: " ";
+    }
+    .copyright{
+        text-align: center;
+        color: $white-navbar
+    }
+}

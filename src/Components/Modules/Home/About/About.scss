@@ -1,0 +1,62 @@
+@import "../../../../Assets/scss/components/_variables.scss";
+
+.info {
+  max-width: 360px;
+  margin: 0 auto;
+  padding: 70px 0 30px;
+  text-align: center;
+  @media screen and (max-width: 991px) {
+    padding: 6% 0 2%;
+  }
+  .icon {
+    > svg {
+      font-size: 3em;
+      line-height: 2.6;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+    &.icon-circle {
+      color: $orange-bg;
+      display: block;
+      max-width: 80px;
+      width: 80px;
+      height: 80px;
+      margin: 0 auto;
+      border-radius: 50%;
+      border: 2px solid $orange-bg;
+      box-shadow: 0 9px 35px -6px rgba(0,0,0,.3);
+      box-shadow: 0 9px 30px -6px rgba($orange-bg,.3);
+      font-size: .7142em;
+      background-color: #fff;
+      position: relative;
+      transition: transform .4s,box-shadow .4s;
+    }
+  }
+  .info-title {
+    font-family: $sans-serif-family;
+    font-weight: $font-weight-bold;
+  }
+  .description{
+    font-size: $font-size-large;
+    color: rgb(134, 135, 139);
+    line-height: 1.429;
+  }
+  &.info-hover {
+    .info-title {
+      transition: color .4s;
+    }
+    &:hover {
+      .icon{
+        box-shadow: 0 15px 30px 0 rgba($orange-bg,.35);
+        transform: translate3d(0,-.5rem,0);
+      }
+      .info-title {
+        color: $orange-bg;
+      }
+    }
+  }
+}

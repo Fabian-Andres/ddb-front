@@ -1,0 +1,19 @@
+@import "../../../../Assets/scss/components/_variables.scss";
+
+.Download {
+  .section {
+    background-color: $light-gray;
+    position: relative;
+    background-position: 50%;
+    background-size: cover;
+  }
+  .title{
+    color: $white-color;
+    &::after {
+      border-color: $white-bg;
+    }
+  }
+  .description {
+    color: $opacity-8;
+  }
+}
