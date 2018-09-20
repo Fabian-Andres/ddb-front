@@ -39,7 +39,7 @@ $ npm start
 - To compile the application in the production environment
 
 ```
-$ npm build
+$ npm run build
 ```
 
 # Author
